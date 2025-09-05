@@ -1,7 +1,7 @@
 import { REST, Routes, Client, GatewayIntentBits, EmbedBuilder, ButtonBuilder, ButtonStyle, SlashCommandBuilder } from 'discord.js'
 import axios from 'axios';
 
-const token = "MTI4Nzc2Nzk1MTU5NjA2MDcyNQ.GHX3Wd.EP3lGK5eg37RT495tXJoP9S50jG2Qk8DYfE82w"
+const token = "discord bot token here"
 
 const client = new Client({ 
     intents: [
@@ -18,7 +18,7 @@ const client = new Client({
 
 const prefix = "!"
 
-const webhookURL = "https://discord.com/api/webhooks/1413594542522761297/NxQN_VAZmcTOCP6012-ldneosutMC2a9eMQ__NW95dhDnCbGFuOsWhC9jpfDMfP4ZBje"
+const webhookURL = "discord webhook URL here"
 
 const commands = [
     new SlashCommandBuilder()
