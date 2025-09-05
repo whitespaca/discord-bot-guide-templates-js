@@ -44,3 +44,7 @@
 - [slashcommand.js](./templates/slashcommand.js) - bot that uses slash commands
 - [reactionrole.js](./templates/reactionrole.js) - bot that gives role on reaction
 - [reactionrolebutton.js](./templates/reactionrolebutton.js) - bot that gives role on button click
+- [webhook.js](./templates/webhook.js) - bot that sends message via webhook
+- [ticket.js](./templates/ticket.js) - bot that creates support tickets
+- [serverinfo.js](./templates/serverinfo.js) - bot that shows server info
+- [tictactoe.js](./templates/tictactoe.js) - bot that allows users to play tic-tac-toe
