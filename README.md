@@ -43,3 +43,4 @@
 - [myprofileinfo.js](./templates/myprofileinfo.js) - bot that sends your profile info
 - [slashcommand.js](./templates/slashcommand.js) - bot that uses slash commands
 - [reactionrole.js](./templates/reactionrole.js) - bot that gives role on reaction
+- [reactionrolebutton.js](./templates/reactionrolebutton.js) - bot that gives role on button click
