@@ -15,19 +15,19 @@ client.once('ready', () => {
     console.log(`Logged in as ${client.user?.tag}!`)
 })
 
-client.on('messageCreate', m => {
-    if (m.content === `${prefix}ping`) {
-        m.reply('Pong!')
+client.on('messageCreate', message => {
+    if (message.content === `${prefix}ping`) {
+            message.reply('Pong!')
     }
 
-    if (m.content === `${prefix}embed`) {
+    if (message.content === `${prefix}embed`) {
         const exampleEmbed = new EmbedBuilder()
             .setColor(0x0099FF)
             .setTitle('Title')
             .setDescription('Description')
             .setImage('https://i.imgur.com/AfFp7pu.png');
 
-        m.channel.send({ embeds: [exampleEmbed] });
+        message.channel.send({ embeds: [exampleEmbed] });
     }
 })
 

@@ -15,9 +15,9 @@ client.once('ready', () => {
     console.log(`Logged in as ${client.user?.tag}!`)
 })
 
-client.on('messageCreate', m => {
-    if (m.content === `${prefix}ping`) {
-        m.channel.send('Pong!')
+client.on('messageCreate', message => {
+    if (message.content === `${prefix}ping`) {
+        message.channel.send('Pong!')
     }
 })
 

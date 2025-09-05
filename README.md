@@ -6,7 +6,7 @@
 
 2. install latest [discord.js](https://discord.js.org/#/docs/discord.js/main/general/welcome) version
 
-    - win +_R
+    - `win` + `R`
     - type `cmd` and enter
     - type
 
@@ -35,3 +35,9 @@
     ```
 
 3. if you see `Logged in as <your bot name>!` your bot is online
+
+## templates
+
+- [pingpong.js](./templates/pingpong.js) - simple ping pong bot
+- [embed.js](./templates/embed.js) - bot that sends embed message
+- [myprofileinfo.js](./templates/myprofileinfo.js) - bot that sends your profile info
