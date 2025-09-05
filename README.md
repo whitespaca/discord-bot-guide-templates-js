@@ -1,2 +1,37 @@
 # discord-bot-guide-templates-js
-교육용
+
+## Getting Started
+
+1. install [node.js](https://nodejs.org/dist/v22.19.0/node-v22.19.0-x64.msi)
+
+2. install latest [discord.js](https://discord.js.org/#/docs/discord.js/main/general/welcome) version
+
+    - win +_R
+    - type `cmd` and enter
+    - type
+
+    ```powershell
+    npm install discord.js
+    ```
+
+    - wait until finished
+
+3. create bot on [discord developer portal](https://discord.com/developers/applications)
+
+4. copy bot token
+
+5. create new folder for your bot
+
+6. create new file `index.js` in your bot folder
+
+## How to run
+
+1. open terminal in your bot folder
+
+2. type
+
+    ```powershell
+    node index.js
+    ```
+
+3. if you see `Logged in as <your bot name>!` your bot is online
