@@ -6,7 +6,8 @@ const client = new Client({
         GatewayIntentBits.MessageContent,
         GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.GuildMembers
+        GatewayIntentBits.GuildMembers,
+        GatewayIntentBits.GuildMessageReactions
     ]
 })
 
@@ -144,7 +145,7 @@ client.on('interactionCreate', async (interaction) => {
             if (!member.roles.cache.has(role.id)) return;
             await member.roles.remove(role);
         });
-        
+
         await interaction.followUp({ content: 'Reaction role message set up!', ephemeral: true });
     }
 })

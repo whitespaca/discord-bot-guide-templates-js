@@ -1,4 +1,4 @@
-import { REST, Routes, Client, GatewayIntentBits, EmbedBuilder, ButtonBuilder, ButtonComponent, ButtonStyle, ButtonInteraction } from 'discord.js'
+import { REST, Routes, Client, GatewayIntentBits, EmbedBuilder, ButtonBuilder, ButtonStyle } from 'discord.js'
 
 const token = "discord bot token here"
 const client = new Client({ 
@@ -6,7 +6,8 @@ const client = new Client({
         GatewayIntentBits.MessageContent,
         GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.GuildMembers
+        GatewayIntentBits.GuildMembers,
+        GatewayIntentBits.GuildMessageReactions
     ]
 })
 
@@ -164,14 +165,17 @@ client.on('interactionCreate', async (interaction) => {
             .setCustomId('getRole')
             .setLabel(`Get ${role.name} Role`)
             .setStyle(ButtonStyle.Primary);
+
         const reactionRoleEmbed = new EmbedBuilder()
             .setColor(0x00FFFF)
             .setTitle('Reaction Role Button')
             .setDescription(`Click the button below to get the "${role.name}" role!`);
+        
         const message = await interaction.reply({ embeds: [reactionRoleEmbed], components: [{ type: 1, components: [button] }], fetchReply: true });
 
         const filter = i => i.customId === 'getRole' && !i.user.bot;
         const collector = message.createMessageComponentCollector({ filter, time: 600000 });
+
         collector.on('collect', async i => {
             const member = await interaction.guild.members.fetch(i.user.id);
             if (member.roles.cache.has(role.id)) {
