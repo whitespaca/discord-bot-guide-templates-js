@@ -41,3 +41,5 @@
 - [pingpong.js](./templates/pingpong.js) - simple ping pong bot
 - [embed.js](./templates/embed.js) - bot that sends embed message
 - [myprofileinfo.js](./templates/myprofileinfo.js) - bot that sends your profile info
+- [slashcommand.js](./templates/slashcommand.js) - bot that uses slash commands
+- [reactionrole.js](./templates/reactionrole.js) - bot that gives role on reaction
