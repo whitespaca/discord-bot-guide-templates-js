@@ -1,7 +1,7 @@
 {
   "name": "discord-bot-guide-templates",
   "version": "1.0.0",
-  "description": "1. install [node.js](https://nodejs.org/dist/v22.19.0/node-v22.19.0-x64.msi)",
+  "description": "Only for educational purposes. Do not use in production.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/whitespaca/discord-bot-guide-templates-js.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "whitespaca",
   "license": "ISC",
   "type": "module",
   "bugs": {
